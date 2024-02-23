@@ -18,7 +18,7 @@
             return curve;
         }
 
-        
+     //need more here   
         public int UpdateOrder
         {
             get { return _updateOrder; }
