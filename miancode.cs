@@ -6,7 +6,7 @@
         private readonly Vector3[] _corners = new Vector3[CornerCount];
         private readonly Plane[] _planes = new Plane[PlaneCount];
 
-
+//nice
  public Curve Clone()
         {
             Curve curve = new Curve();
@@ -28,6 +28,18 @@
                 {
                     _updateOrder = value;
                     OnUpdateOrderChanged(this, EventArgs.Empty);
+                }
+            }
+        }
+    public int DrawOrder
+        {
+            get { return _drawOrder; }
+            set
+            {
+                if (_drawOrder != value)
+                {
+                    _drawOrder = value;
+                    OnDrawOrderChanged(this, EventArgs.Empty);
                 }
             }
         }
